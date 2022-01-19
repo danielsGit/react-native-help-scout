@@ -92,7 +92,9 @@ public class HelpScoutModule extends ReactContextBaseJavaModule {
 
 	@ReactMethod
 	public void navigate(String route) {
-
+		if (route.equals("/ask/chat")) {
+			BeaconActivity.open(this.reactContext, BeaconScreens.CHAT, new ArrayList<String>());
+		}
 	}
 
 	@ReactMethod
