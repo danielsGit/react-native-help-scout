@@ -58,7 +58,7 @@ repositories {
 	google()
 }
 
-def _beaconVersion = safeExtGet("helpscoutBeacon", "4.0.2")
+def _beaconVersion = safeExtGet("helpscoutBeacon", "3.0.2")
 
 dependencies {
 	// ref:

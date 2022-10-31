@@ -19,6 +19,8 @@ interface IBeacon extends EventSubscriptionVendor {
 	contactForm(): void
 	previousMessages(): void
 	dismiss(callback: () => void): void
+	addListener(): void
+	removeListeners(): void
 }
 
 const NativeModule = <IBeacon>NativeModules.RNHelpScoutBeacon
