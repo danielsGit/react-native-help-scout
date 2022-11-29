@@ -1,5 +1,7 @@
 package com.codemotionapps.reactnativehelpscout;
 
+import androidx.annotation.NonNull;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -16,8 +18,9 @@ public class HelpScoutPackage implements ReactPackage {
 		return Arrays.<NativeModule>asList(new HelpScoutModule(reactContext));
 	}
 
+	@NonNull
 	@Override
-	public List<Class<? extends JavaScriptModule>> createJSModules() {
+	public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactApplicationContext) {
 		return null;
 	}
 }

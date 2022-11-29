@@ -9,7 +9,8 @@
 		"paths": {
 			"react": ["../example/node_modules/react"],
 			"react-native": ["../example/node_modules/react-native"]
-		}
+		},
+		"skipLibCheck": true
 	},
 	"include": ["./src"]
 }
