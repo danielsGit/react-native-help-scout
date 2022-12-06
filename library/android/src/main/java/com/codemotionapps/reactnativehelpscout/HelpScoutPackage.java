@@ -21,6 +21,6 @@ public class HelpScoutPackage implements ReactPackage {
 	@NonNull
 	@Override
 	public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactApplicationContext) {
-		return null;
+		return Collections.emptyList();
 	}
 }
